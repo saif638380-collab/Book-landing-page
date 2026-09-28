@@ -1,0 +1,6 @@
+{
+  "name": "50 Romance eBooks + Audiobooks by Emma",
+  "description": "50 Stories of Filthy Chemistry, Forbidden Heat & Obsessive Desire. Curated by Emma. 50 full-length spicy romance novels + 50 whispered audiobooks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
