@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var nativeFetch = window.fetch;
+          var fetchFn = nativeFetch ? nativeFetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return fetchFn;
+            },
+            set: function(val) {
+              fetchFn = typeof val === 'function' ? val : fetchFn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (_) {}
+      })();
+    </script>
     <title>50 Romance eBooks + Audiobooks by Emma | Filthy Chemistry & Forbidden Heat</title>
     <meta name="description" content="50 Stories of Filthy Chemistry, Forbidden Heat & Obsessive Desire. Curated by Emma. 50 full-length spicy romance novels + 50 whispered audiobooks." />
     <meta property="og:title" content="50 Romance eBooks + Audiobooks by Emma | Filthy Chemistry & Forbidden Heat" />
