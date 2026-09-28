@@ -19,6 +19,9 @@ import {
 } from 'lucide-react';
 import { TropeExplorer } from './components/TropeExplorer';
 import { StickyBottomCTA } from './components/StickyBottomCTA';
+import heroProductImg from './assets/images/hero_product_bundle_1790573599770.jpg';
+import productShowcaseImg from './assets/images/Gemini_Generated_Image_2ige5t2ige5t2ige.jpeg';
+import emotionalCoupleImg from './assets/images/emotional_cinematic_couple_1790573626249.jpg';
 
 // The official Digistore24 checkout redirect link:
 export const CHECKOUT_URL = "https://www.checkout-ds24.com/redir/630712/saif219569dafa/";
@@ -83,7 +86,7 @@ export default function App() {
           <div className="relative my-6 rounded-2xl overflow-hidden shadow-[0_15px_60px_rgba(153,27,27,0.35)] border border-rose-900/50 group">
             <div className="absolute inset-0 bg-gradient-to-t from-[#080306] via-transparent to-transparent opacity-40 z-10 pointer-events-none" />
             <img
-              src="/src/assets/images/hero_product_bundle_1790573599770.jpg"
+              src={heroProductImg}
               alt="50 Romance Stories Complete Collection Mockup by Emma"
               className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]"
               referrerPolicy="no-referrer"
@@ -288,7 +291,7 @@ export default function App() {
           {/* Large Prominent Product Image */}
           <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_70px_rgba(185,28,28,0.4)] border border-rose-800/40 mb-6 group">
             <img
-              src="/src/assets/images/Gemini_Generated_Image_2ige5t2ige5t2ige.jpeg"
+              src={productShowcaseImg}
               alt="50 Romance Collection Showcase"
               className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
               referrerPolicy="no-referrer"
@@ -347,7 +350,7 @@ export default function App() {
           {/* Seductive cinematic background */}
           <div className="relative min-h-[460px] sm:min-h-[500px] flex items-end">
             <img
-              src="/src/assets/images/emotional_cinematic_couple_1790573626249.jpg"
+              src={emotionalCoupleImg}
               alt="Cinematic romantic couple in tender intimate embrace"
               className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"
